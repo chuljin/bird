@@ -1,6 +1,0 @@
-protocol bgp elch from dnpeers {
-  neighbor fe80::1 % 'elch' as 4242423245;
-  # 16 ms, 100 mbit/s, encrypted tunnel (updated: 2016-02-18)
-  import where dn42_import_filter(3,24,33);
-  export where dn42_export_filter(3,24,33);
-};

@@ -1,6 +1,0 @@
-protocol bgp mt from dnpeers {
-  neighbor fe80::93 % 'mt' as 4242421712;
-  # 2 ms, 1000 mbit/s, encrypted tunnel (updated: 2015-12-19)
-  import where dn42_import_filter(1,25,33);
-  export where dn42_export_filter(1,25,33);
-};

@@ -1,6 +1,0 @@
-protocol bgp marlinc from dnpeers {
-  neighbor 172.20.187.198 as 4242420328;
-  # 6 ms, 100 mbit/s, encrypted tunnel (updated: 2015-12-13)
-  import where dn42_import_filter(2,24,33);
-  export where dn42_export_filter(2,24,33);
-};

@@ -1,7 +1,0 @@
-protocol bgp fira from dnpeers {
-  neighbor  fe80::3218 % 'evenet' as 4242423218;
-
-  # 10 ms, 300 mbit/s, encrypted tunnel (updated: 2016-02-06)
-  import where dn42_import_filter(3,24,33);
-  export where dn42_export_filter(3,24,33);
-};

@@ -1,6 +1,0 @@
-protocol bgp hax404 from dnpeers {
-  neighbor fe80::404 % 'hax404' as 76114;
-  # 5 ms, 100 mbit/s, encrypted tunnel (updated: 2015-06-28)
-  import where dn42_import_filter(2,24,33);
-  export where dn42_export_filter(2,24,33);
-};

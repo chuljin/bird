@@ -1,6 +1,0 @@
-protocol bgp exabgp from dnpeers {
-  neighbor 172.23.75.11 as OWNAS;
-  import where dn42_export_filter(1,26,34);
-  export none;
-  path metric 0;
-};

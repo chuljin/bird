@@ -1,6 +1,0 @@
-protocol bgp tobee from dnpeers {
-  neighbor 172.23.67.1 as 4242420022;
-  # 6 ms, 1000 mbit/s, encrypted tunnel (updated: 2015-06-28)
-  import where dn42_import_filter(2,25,33);
-  export where dn42_export_filter(2,25,33);
-};

@@ -1,6 +1,0 @@
-protocol bgp flatbert from dnpeers {
-  neighbor 172.22.99.253 as 64699;
-  # 30 ms, 3 mbit/s, encrypted tunnel (updated: 2016-02-06)
-  import where dn42_import_filter(3,22,33);
-  export where dn42_export_filter(3,22,33);
-};

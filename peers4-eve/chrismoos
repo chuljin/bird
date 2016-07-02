@@ -1,7 +1,0 @@
-protocol bgp chrismoos from dnpeers {
-  neighbor 172.20.16.136 as 4242421588;
-
-  # 9 ms, 100 mbit/s, pfs tunnel (updated: 2016-01-05)timeout 10s)
-  import where dn42_import_filter(3,24,34);
-  export where dn42_export_filter(3,24,34);
-};

@@ -1,6 +1,0 @@
-#protocol bgp elephant from dnpeers {
-#  neighbor fdc0:4992:6a6d:307::2 as 4242420031;
-#  # 1 ms, 1000 mbit/s, encrypted tunnel (updated: 2015-12-19)
-#  import where dn42_import_filter(1,25,33);
-#  export where dn42_export_filter(1,25,33);
-#};

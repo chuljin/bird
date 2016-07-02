@@ -1,7 +1,0 @@
-protocol bgp andi from dnpeers {
-  neighbor fe80::f00 % 'andi' as 4242423991;
-
-  # 9 ms, 1000 mbit/s, pfs tunnel (updated: 2016-01-14)
-  import where dn42_import_filter(3,25,34);
-  export where dn42_export_filter(3,25,34);
-};

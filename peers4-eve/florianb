@@ -1,6 +1,0 @@
-protocol bgp florianb from dnpeers {
-  neighbor 172.20.48.1 as 4242423955;
-  # 77 ms, 100 mbit/s, encrypted tunnel (updated: 2016-02-15)
-  import where dn42_import_filter(4,24,33);
-  export where dn42_export_filter(4,24,33);
-};

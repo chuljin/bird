@@ -1,6 +1,0 @@
-#protocol bgp sundin from dnpeers {
-#  neighbor 172.23.135.1 as 4242423007;
-#  # 29 ms, 1000 mbit/s, encrypted tunnel (updated: 2015-12-28)
-#  import where dn42_import_filter(3,25,33);
-#  export where dn42_export_filter(3,25,33);
-#};

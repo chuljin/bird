@@ -1,8 +1,0 @@
-protocol bgp chelnok from dnpeers {
-  neighbor fe80::60a7:3 % 'chelnok' as 4242421375;
-  source address fe80::92;
-  direct;
-  # 12 ms, 1000 mbit/s, encrypted tunnel (updated: 2015-06-28)
-  import where dn42_import_filter(3,25,33);
-  export where dn42_export_filter(3,25,33);
-};

@@ -1,8 +1,0 @@
-protocol bgp tobee from dnpeers {
-  neighbor fe80::93 % 'tobee' as 4242420022;
-  source address fe80::92;
-  direct;
-  # 6 ms, 1000 mbit/s, encrypted tunnel (updated: 2015-06-28)
-  import where dn42_import_filter(2,25,33);
-  export where dn42_export_filter(2,25,33);
-};

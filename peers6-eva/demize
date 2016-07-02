@@ -1,6 +1,0 @@
-protocol bgp demize from dnpeers {
-  neighbor fe80::f03c:91ff:fe6e:f990 % 'demize' as 4242422017;
-  # 14 ms, 125 mbit/s, pfs tunnel (updated: 2016-02-14)10s)
-  import where dn42_import_filter(3,24,34);
-  export where dn42_export_filter(3,24,34);
-};

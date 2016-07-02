@@ -1,7 +1,0 @@
-protocol bgp eve from dnpeers {
-  neighbor 172.23.75.1 as OWNAS;
-  # 11 ms, 1000 mbit/s, encrypted tunnel (updated: 2015-11-28)
-  import where dn42_export_filter(3,25,33);
-  export where dn42_export_filter(3,25,33);
-  igp table ospf_routes;
-};

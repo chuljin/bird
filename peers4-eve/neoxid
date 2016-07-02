@@ -1,7 +1,0 @@
-protocol bgp neoxid from dnpeers {
-  neighbor 172.23.105.227 as 4242420800;
-
-  # 5 ms, 1000 mbit/s, pfs tunnel (updated: 2016-02-17)
-  import where dn42_import_filter(2,25,34);
-  export where dn42_export_filter(2,25,34);
-};

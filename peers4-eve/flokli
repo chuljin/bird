@@ -1,8 +1,0 @@
-protocol bgp flokli from dnpeers {
-  neighbor 172.20.27.197 as 4242422100;
-
-  # 0 ms, 1000 mbit/s, pfs tunnel (updated: 2016-02-01)
-  import where dn42_import_filter(1,25,34);
-  export where dn42_export_filter(1,25,34);
-  next hop self;
-};

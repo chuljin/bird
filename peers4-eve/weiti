@@ -1,6 +1,0 @@
-protocol bgp weiti from dnpeers {
-  neighbor 172.20.175.193 as 4242423905;
-  # 3 ms, 100 mbit/s, encrypted tunnel (updated: 2016-02-17)
-  import where dn42_import_filter(2,24,33);
-  export where dn42_export_filter(2,24,33);
-};

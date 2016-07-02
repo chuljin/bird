@@ -1,6 +1,0 @@
-protocol bgp twink0r_gb from dnpeers {
-  neighbor fe80::beef % 'twink0r-gb' as 4242421339;
-  # 6 ms, 1000 mbit/s, encrypted tunnel (updated: 2016-01-17)
-  import where dn42_import_filter(2,25,33);
-  export where dn42_export_filter(2,25,33);
-};

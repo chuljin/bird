@@ -1,6 +1,0 @@
-protocol bgp tombii_nl from dnpeers {
-  neighbor 172.23.102.78 as 4242420321;
-  # 2 ms, 100 mbit/s, encrypted tunnel (updated: 2015-11-30)
-  import where dn42_import_filter(1,24,33);
-  export where dn42_export_filter(1,24,33);
-};

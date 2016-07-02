@@ -1,6 +1,0 @@
-protocol bgp os23 from dnpeers {
-  neighbor 192.168.92.2 as 4242423023;
-  # 37 ms, 10 mbit/s, pfs tunnel (updated: 2016-01-08)
-  import where dn42_import_filter(4,23,34);
-  export where dn42_export_filter(4,23,34);
-};

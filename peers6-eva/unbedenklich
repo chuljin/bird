@@ -1,7 +1,0 @@
-#protocol bgp unbedenklich from dnpeers {
-#  neighbor fe80:: % 'unbedenklich' as 4242420020;
-#  # 2 ms, 100 mbit/s, encrypted tunnel (updated: 2015-11-30)
-#  import where dn42_import_filter(1,24,33);
-#  export where dn42_export_filter(1,24,33);
-#  igp table direct_peers;
-#};
