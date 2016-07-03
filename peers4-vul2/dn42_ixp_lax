@@ -1,5 +1,5 @@
 protocol bgp dn42_ixp_lax from dnpeers {
   neighbor 172.20.185.129 as 4242420325;
-  import where dn42_import_filter(5,25,33);
-  export where dn42_export_filter(5,25,33);
+  import where dn42_import_filter(5,24,33);
+  export where dn42_export_filter(5,24,33);
 };

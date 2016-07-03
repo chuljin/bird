@@ -1,5 +1,5 @@
 protocol bgp dn42_rewby_jp from dnpeers {
   neighbor 172.23.169.33 as 4242421230;
-  import where dn42_import_filter(1,25,33);
-  export where dn42_export_filter(1,25,33);
+  import where dn42_import_filter(1,24,33);
+  export where dn42_export_filter(1,24,33);
 };
