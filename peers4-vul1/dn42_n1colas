@@ -1,0 +1,5 @@
+protocol bgp dn42_n1colas from dnpeers {
+  neighbor 172.20.41.1 as 4242422987;
+  import where dn42_import_filter(9,25,33);
+  export where dn42_export_filter(9,25,33);
+};

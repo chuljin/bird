@@ -1,0 +1,5 @@
+protocol bgp dn42_florianb from dnpeers {
+  neighbor 172.20.2.1 as 4242423955;
+  import where dn42_import_filter(9,25,33);
+  export where dn42_export_filter(9,25,33);
+};
