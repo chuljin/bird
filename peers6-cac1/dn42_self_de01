@@ -1,0 +1,5 @@
+protocol bgp dn42_self_de01 from dnpeers {
+  neighbor fd98:abd0:29cc:f420::122 as 4242422482;
+  import where dn42_import_filter(5,23,33);
+  export where dn42_export_filter(5,23,33);
+};

@@ -1,0 +1,5 @@
+protocol bgp dn42_chrismoos from dnpeers {
+  neighbor 172.20.162.78 as 4242421588;
+  import where dn42_import_filter(3,23,33);
+  export where dn42_export_filter(3,23,33);
+};

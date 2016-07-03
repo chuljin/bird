@@ -1,0 +1,5 @@
+protocol bgp dn42_root6 from dnpeers {
+  neighbor 172.23.65.252 as 4242420205;
+  import where dn42_import_filter(9,23,33);
+  export where dn42_export_filter(9,23,33);
+};
