@@ -1,4 +1,4 @@
-protocol bgp dn42_self_jp01 from ebgp_dn42 {
+protocol bgp dn42_self_jp01 from bgp_ebgp_dn42 {
   neighbor fd98:abd0:29cc:f420::232 as 4242422483;
   import where dn42_import_filter(6,24,33);
   export where dn42_export_filter(6,24,33);

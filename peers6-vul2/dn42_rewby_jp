@@ -1,4 +1,4 @@
-protocol bgp dn42_rewby_jp from ebgp_dn42 {
+protocol bgp dn42_rewby_jp from bgp_ebgp_dn42 {
   neighbor fdfd:dead:c0de:1::1 as 4242421230;
   import where dn42_import_filter(1,24,33);
   export where dn42_export_filter(1,24,33);

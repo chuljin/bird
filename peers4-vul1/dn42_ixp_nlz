@@ -1,4 +1,4 @@
-protocol bgp dn42_ixp_nlz from ebgp_dn42 {
+protocol bgp dn42_ixp_nlz from bgp_ebgp_dn42 {
   neighbor 172.20.182.1 as 4242420330;
   import where dn42_import_filter(2,24,33);
   export where dn42_export_filter(2,24,33);
