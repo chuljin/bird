@@ -1,4 +1,4 @@
-protocol bgp dn42_tombii from dnpeers {
+protocol bgp dn42_tombii from ebgp_dn42 {
   neighbor 172.23.102.33 as 4242420321;
   import where dn42_import_filter(3,23,33);
   export where dn42_export_filter(3,23,33);

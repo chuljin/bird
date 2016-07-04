@@ -1,4 +1,4 @@
-protocol bgp dn42_nellicus from dnpeers {
+protocol bgp dn42_nellicus from ebgp_dn42 {
   neighbor 172.22.128.97 as 4242421719;
   import where dn42_import_filter(9,23,33);
   export where dn42_export_filter(9,23,33);

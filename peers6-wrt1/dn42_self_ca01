@@ -1,4 +1,4 @@
-protocol bgp dn42_self_ca01 from dnpeers {
+protocol bgp dn42_self_ca01 from ebgp_dn42 {
   neighbor fd98:abd0:29cc:f420::12 as 4242422481;
   import where dn42_import_filter(5,23,33);
   export where dn42_export_filter(5,23,33);
