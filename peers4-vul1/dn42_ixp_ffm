@@ -1,4 +1,4 @@
-protocol bgp dn42_ixp_ffm from bgp_ebgp_dn42 {
+protocol bgp b_e_dn42_ixp_ffm from b_e_dn42 {
   neighbor 172.20.176.1 as 4242421340;
   import where dn42_import_filter(1,24,33);
   export where dn42_export_filter(1,24,33);
