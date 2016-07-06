@@ -1,5 +1,5 @@
 protocol bgp b_e_dn42_self_jp01 from b_e_dn42 {
-  neighbor 172.20.18.62 as 4242422483;
+  neighbor 172.20.18.54 as 4242422483;
   import where dn42_import_filter(6,24,33);
   export where dn42_export_filter(6,24,33);
 };
