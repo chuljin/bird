@@ -1,0 +1,3 @@
+protocol bgp b_i_dn42_self_ca02 from b_e_dn42 {
+  neighbor 10.248.218.114 as 4242422481;
+};
