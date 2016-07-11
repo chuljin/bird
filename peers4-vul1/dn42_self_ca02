@@ -1,4 +1,4 @@
-protocol bgp be_dn42_self_ca02 from be_dn42 {
+protocol bgp bio_dn42_self_ca02 from bio_dn42 {
   neighbor 172.20.18.49 as 4242422481;
   import where dn42_import_filter(5,24,33);
   export where dn42_export_filter(5,24,33);
