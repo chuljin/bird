@@ -1,5 +1,4 @@
-protocol bgp be_dn42_twink0r from bgp_ebgp {
-  local as 4242422482;
+protocol bgp be_dn42_twink0r from be_dn42 {
   neighbor 172.20.11.1 as 4242421339;
   import where dn42_import_filter(3,24,33);
   export where dn42_export_filter(3,24,33);
