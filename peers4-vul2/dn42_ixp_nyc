@@ -1,6 +1,6 @@
 protocol bgp be_dn42_ixp_nyc from be_dn42 {
   neighbor 172.20.185.1 as 4242420324;
-  TODO: check latency
+# TODO: check latency
   import where dn42_import_filter(3,23,33);
   export where dn42_export_filter(3,23,33);
 };
