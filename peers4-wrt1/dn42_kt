@@ -1,5 +1,5 @@
 protocol bgp be_dn42_kt from be_dn42 {
   neighbor 172.23.168.248 as 4242423946;
-  import where dn42_import_filter(4,23,33);
+  import where dn42_import_filter(4,23,33,1,9);
   export where dn42_export_filter(4,23,33);
 };

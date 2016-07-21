@@ -1,5 +1,5 @@
 protocol bgp be_dn42_sloth from be_dn42 {
   neighbor 172.22.150.121 as 4242420031;
-  import where dn42_import_filter(9,24,33);
+  import where dn42_import_filter(9,24,33,1,6);
   export where dn42_export_filter(9,24,33);
 };

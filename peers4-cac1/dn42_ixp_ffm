@@ -1,5 +1,5 @@
 protocol bgp be_dn42_ixp_ffm from be_dn42 {
   neighbor 172.20.176.1 as 4242421340;
-  import where dn42_import_filter(5,23,33);
+  import where dn42_import_filter(5,23,33,2,2);
   export where dn42_export_filter(5,23,33);
 };
