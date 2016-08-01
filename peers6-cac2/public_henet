@@ -3,11 +3,11 @@ protocol bgp be_public_henet from be_public {
   import filter {
     if public_is_self_net() then reject;
     accept;
-  }
+  };
   export filter {
     if public_is_self_net() then {
       accept;
     }
     reject;
-  }
+  };
 };
