@@ -1,0 +1,5 @@
+protocol bgp bio_dn42_self_de01 from bio_dn42 {
+  neighbor 172.23.248.253 as 4242422481;
+  import where dn42_import_filter(6,24,33,0,0);
+  export where dn42_export_filter(6,24,33);
+};
