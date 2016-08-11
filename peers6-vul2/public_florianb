@@ -1,5 +1,6 @@
 protocol bgp be_public_florianb from be_public {
   neighbor 2a06:1287:2c:93dd::1 as 9178;
+  next hop self;
   import filter {
     if public_is_self_net() then reject;
     accept;
