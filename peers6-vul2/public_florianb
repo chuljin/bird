@@ -6,7 +6,7 @@ protocol bgp be_public_florianb from be_public {
     accept;
   };
   export filter {
-    if public_is_self_net() then {
+    if public_is_self_net_agg() then {
       accept;
     }
     reject;
