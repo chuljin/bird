@@ -1,11 +1,6 @@
 protocol bgp be_public_vultr from be_public {
   neighbor 169.254.169.254 as 64515;
-  import filter {
-    if is_default() then reject;
-    if public_is_self_net() then reject;
-    if public_is_choopa() then reject;
-    accept;
-  };
+  import none;
   export filter {
     if public_is_self_net_agg() then {
       accept;
