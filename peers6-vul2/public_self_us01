@@ -2,6 +2,7 @@ protocol bgp bio_public_self_us01 from bio_public {
   neighbor 2A06:E881:140F::83 as 202540;
   source address 2A06:E881:140F::76;
   import filter {
+    if public_is_choopa() then reject;
     accept;
   };
   export all;
