@@ -1,0 +1,18 @@
+protocol bgp be_public_vultr from be_public {
+  neighbor 2001:19f0:ffff::1 as 64515;
+  import filter {
+    if public_is_self_net() then reject;
+    if public_is_choopa() then reject;
+    accept;
+  };
+  export filter {
+    if public_is_self_net_agg() then {
+      accept;
+    }
+    reject;
+  };
+  source address 2001:19f0:6c00:9143:5400:00ff:fe10:fd80;
+  graceful restart on;
+  multihop 2;
+  include "/etc/bird/vultr.conf";
+};
