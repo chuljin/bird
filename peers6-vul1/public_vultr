@@ -12,7 +12,6 @@ protocol bgp be_public_vultr from be_public {
     reject;
   };
   source address 2001:19f0:6c00:9143:5400:00ff:fe10:fd80;
-  graceful restart on;
   multihop 2;
   include "/etc/bird/vultr.conf";
 };
