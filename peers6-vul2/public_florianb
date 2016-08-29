@@ -9,7 +9,6 @@ protocol bgp be_public_florianb from be_public {
   };
   export filter {
     if public_is_self_net_agg() then {
-      bgp_path.prepend(202540);
       accept;
     }
     reject;
