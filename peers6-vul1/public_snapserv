@@ -13,4 +13,5 @@ protocol bgp be_public_snapserv from be_public {
     }
     reject;
   };
+  include "/etc/bird/snapserv.conf";
 };
