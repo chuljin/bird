@@ -3,7 +3,6 @@ protocol bgp be_public_vultr from be_public {
   source address 2001:19f0:ac01:f3:5400:00ff:fe30:18d5;
   import none;
   export filter {
-    reject;
     if public_is_self_net_agg() then {
       accept;
     }
