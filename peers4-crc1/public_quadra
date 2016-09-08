@@ -1,8 +1,9 @@
 protocol bgp be_public_quadra from be_public {
   neighbor 204.152.206.113 as 8100;
-  import all;
+  import none;
   export filter {
     if public_is_self_net_agg() then {
+      bgp_path.prepend(202540);
       accept;
     }
     reject;
