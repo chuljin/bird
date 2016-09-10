@@ -13,5 +13,4 @@ protocol bgp be_public_quadra from be_public {
   };
   source address 23.152.0.158;
   multihop 2;
-  next hop self;
 };
