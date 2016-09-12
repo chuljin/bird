@@ -1,5 +1,7 @@
 protocol bgp be_public_vultr from be_public {
-  neighbor 169.254.169.254 as 64515;
+  neighbor 2001:19f0:ffff::1 as 64515;
+  source address 2001:19f0:ac01:f3:5400:00ff:fe30:18d5;
+  multihop 2;
   import none;
   export filter {
     if public_is_self_net_agg() then {
@@ -7,7 +9,5 @@ protocol bgp be_public_vultr from be_public {
     }
     reject;
   };
-  source address 45.32.131.194;
-  multihop 2;
   include "/etc/bird/vultr.conf";
 };
