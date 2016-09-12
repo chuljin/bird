@@ -15,15 +15,6 @@ protocol bgp be_public_quadra from be_public {
     reject;
   };
   export filter {
-    print "-----EXPORT BEGIN-----";
-    print "net ", net;
-    print "from ", from;
-    print "gw ", gw;
-    print "source ", source;
-    print "dest ", dest;
-    print "bgp_next_hop ", bgp_next_hop;
-    print "------EXPORT END------";
-    print "";
     if public_is_self_net_agg() then {
       bgp_community.add((8100,3));
       bgp_path.prepend(202540);
