@@ -12,7 +12,8 @@ protocol bgp be_public_quadra from be_public {
     print "bgp_next_hop ", bgp_next_hop;
     print "------IMPORT END------";
     print "";
-    reject;
+    gw = bgp_next_hop;
+    accept;
   };
   export filter {
     print "-----EXPORT BEGIN-----";
