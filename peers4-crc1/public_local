@@ -2,8 +2,28 @@ protocol bgp be_public_quadra from be_public {
   neighbor 204.152.206.113 as 8100;
   source address 23.152.0.158;
   multihop 2;
-  import none;
+  import filter {
+    print "-----IMPORT BEGIN-----";
+    print "net ", net;
+    print "from ", from;
+    print "gw ", gw;
+    print "source ", source;
+    print "dest ", dest;
+    print "bgp_next_hop ", bgp_next_hop;
+    print "------IMPORT END------";
+    print "";
+    reject;
+  };
   export filter {
+    print "-----EXPORT BEGIN-----";
+    print "net ", net;
+    print "from ", from;
+    print "gw ", gw;
+    print "source ", source;
+    print "dest ", dest;
+    print "bgp_next_hop ", bgp_next_hop;
+    print "------EXPORT END------";
+    print "";
     if public_is_self_net_agg() then {
       bgp_community.add((8100,3));
       bgp_path.prepend(202540);
