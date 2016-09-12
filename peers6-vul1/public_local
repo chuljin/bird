@@ -5,6 +5,7 @@ protocol bgp be_public_vultr from be_public {
   import none;
   export filter {
     if public_is_self_net_agg() then {
+      bgp_path.prepend(202540);
       accept;
     }
     reject;
