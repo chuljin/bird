@@ -1,0 +1,13 @@
+protocol bgp be_public_hostigation from be_public {
+  neighbor 69.85.88.1 as 6921;
+  source address 69.85.88.107;
+  import none;
+  export filter {
+    if public_is_self_net_agg() then {
+      bgp_path.prepend(202540);
+      bgp_path.prepend(202540);
+      accept;
+    }
+    reject;
+  };
+};
