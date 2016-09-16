@@ -1,0 +1,55 @@
+LOCATIONS
+00	ANY
+01	Main DC (currently Los Angeles, CA, US)
+02	Toronto, ON, CA
+03	Frankfurt, HE, DE
+04	Tokyo, 13, JP
+05	San Jose, CA, US
+06	Los Angeles, CA, US
+07	Charlotte, NC, US
+
+
+PUBLIC (ro:202540:)
+10xx: Learned from transits
+00	ANY
+01	6939	Hurricane Electric
+02	20473	Choopa (Vultr)
+04	200753	SnapServ
+05	9178	Chattr
+06	8100	Quadranet (deprecated)
+07	6921	Arachnitec (Hostigation)
+
+20xx: Learned from IXPs
+(none)
+
+30xx: Learned from downstreams
+(none)
+
+40xx: Origin by location (above)
+
+DN42 (ro:424242248z: x=0 or 1)
+421xx: Learned from transits and/or peers
+00	ANY
+01	4242423955	florianb
+02	4242421339	twink0r
+03	4242422987	n1colas
+04	4242421588	chrismoos
+05	4242421719	nellicus
+06	4242420031	sloth
+07	4242420205	root6
+08	4242420321	tombii
+09	4242423946	kt
+10	4242421230	rewby
+
+422xx: Learned from IXPs
+00	ANY
+01	4242420120	nl-zuid Falkenstein
+02	4242421340	nl-zuid Frankfurt
+03	4242420330	nl-zuid NL-Zuid
+04	4242420324	nl-zuid NYC
+05	4242420325	nl-zuid LAX
+
+423xx: Learned from downstreams
+(none)
+
+424xx: Origin by location (above)
