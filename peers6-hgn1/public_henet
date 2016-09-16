@@ -5,7 +5,6 @@ protocol bgp be_public_henet from be_public {
     bgp_ext_community.add((ro,202540,1001));
     if is_default() then reject;
     if public_is_self_net() then reject;
-    #bgp_path.prepend(6939);
     accept;
   };
   export filter {
