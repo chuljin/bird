@@ -2,8 +2,14 @@ protocol bgp be_public_vultr from be_public {
   neighbor 2001:19f0:ffff::1 as 64515;
   source address 2001:19f0:ac01:f3:5400:00ff:fe30:18d5;
   multihop 2;
-  import none;
+  import filter {
+    bgp_ext_community.add((ro,202540,1000));
+    bgp_ext_community.add((ro,202540,1002));
+    reject;
+  };
   export filter {
+    bgp_ext_community.add((ro,202540,4000));
+    bgp_ext_community.add((ro,202540,4005));
     if public_is_self_net_agg() then {
       accept;
     }

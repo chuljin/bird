@@ -1,8 +1,14 @@
 protocol bgp be_public_hostigation from be_public {
   neighbor 2606:df00:2::1 as 6921;
   source address 2606:df00:2::fd73:c94c;
-  import none;
+  import filter {
+    bgp_ext_community.add((ro,202540,1000));
+    bgp_ext_community.add((ro,202540,1006));
+    reject;
+  };
   export filter {
+    bgp_ext_community.add((ro,202540,4000));
+    bgp_ext_community.add((ro,202540,4007));
     if public_is_self_net_agg() then {
       bgp_path.prepend(202540);
       bgp_path.prepend(202540);
