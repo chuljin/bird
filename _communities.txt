@@ -40,6 +40,7 @@ DN42 (ro:424242248z: x=0 or 1)
 08	4242420321	tombii
 09	4242423946	kt
 10	4242421230	rewby
+11	4242423759	drathir
 
 422xx: Learned from IXPs
 00	ANY
