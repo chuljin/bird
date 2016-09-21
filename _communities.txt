@@ -7,6 +7,7 @@ LOCATIONS
 05	San Jose, CA, US
 06	Los Angeles, CA, US
 07	Charlotte, NC, US
+08	Dallas, TX, US
 
 
 PUBLIC (ro:202540:)
