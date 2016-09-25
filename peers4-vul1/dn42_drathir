@@ -1,5 +1,5 @@
-#protocol bgp be_dn42_drathir from be_dn42 {
-#  neighbor 172.20.190.129 as 4242423759;
-#  import where dn42_import_filter(3,24,33,1,11);
-#  export where dn42_export_filter(3,24,33);
-#};
+protocol bgp be_dn42_drathir from be_dn42 {
+  neighbor 172.20.190.129 as 4242423759;
+  import where dn42_import_filter(3,24,33,1,11);
+  export where dn42_export_filter(3,24,33);
+};
