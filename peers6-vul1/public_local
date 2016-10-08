@@ -20,6 +20,7 @@ protocol bgp be_public_vultr from be_public {
     bgp_community.add((45177,49999)); #US
     
     if public_is_self_net_agg() then {
+      public_prepend();
       accept;
     }
     reject;

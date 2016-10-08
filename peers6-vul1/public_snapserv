@@ -12,6 +12,7 @@ protocol bgp be_public_snapserv from be_public {
     bgp_ext_community.add((ro,202540,4000));
     bgp_ext_community.add((ro,202540,4003));
     if public_is_self_net_agg() then {
+      public_prepend();
       accept;
     }
     reject;
