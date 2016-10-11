@@ -1,0 +1,5 @@
+protocol bgp be_dn42_error404 from be_dn42 {
+  neighbor 172.20.14.233 as 4242422700;
+  import where dn42_import_filter(2,23,33,1,12);
+  export where dn42_export_filter(2,23,33);
+};
