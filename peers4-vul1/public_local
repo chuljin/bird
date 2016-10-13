@@ -12,6 +12,7 @@ protocol bgp be_public_vultr from be_public {
     bgp_ext_community.add((ro,202540,4003));
     bgp_path.prepend(202540);
     bgp_path.prepend(202540);
+    bgp_path.prepend(202540);
     
     #Choopa/Vultr (20473) is letting private ASNs (64515 65534) leak to Layer2 (45177), therefore:
     #Try to keep Vultr from announcing to Layer2
