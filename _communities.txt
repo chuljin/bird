@@ -16,7 +16,7 @@ PUBLIC (ro:202540:)
 01	6939	Hurricane Electric
 02	20473	Choopa (Vultr)
 03	200753	SnapServ
-04	9178	Chattr
+04	9178	DevCapsule
 05	8100	Quadranet (deprecated)
 06	6921	Arachnitec (Hostigation)
 
