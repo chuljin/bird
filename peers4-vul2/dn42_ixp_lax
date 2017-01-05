@@ -1,5 +1,0 @@
-protocol bgp be_dn42_ixp_lax from be_dn42 {
-  neighbor 172.20.185.129 as 4242420325;
-  import where dn42_import_filter(9,24,33,2,5);
-  export where dn42_export_filter(9,24,33);
-};
