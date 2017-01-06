@@ -1,5 +1,5 @@
-protocol bgp be_dn42_weiti from be_dn42 {
-  neighbor 172.20.175.193 as 4242423905;
-  import where dn42_import_filter(2,24,33,1,13);
-  export where dn42_export_filter(2,24,33);
-};
+#protocol bgp be_dn42_weiti from be_dn42 {
+#  neighbor 172.20.175.193 as 4242423905;
+#  import where dn42_import_filter(2,24,33,1,13);
+#  export where dn42_export_filter(2,24,33);
+#};
