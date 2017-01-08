@@ -31,7 +31,7 @@ PUBLIC (ro:202540:)
 DN42 (ro:424242248z: x=0 or 1)
 421xx: Learned from transits and/or peers
 00	ANY
-01	     64647	florianb
+01	64647     	florianb
 02	4242421339	twink0r
 03	4242422987	n1colas
 04	4242421588	chrismoos
