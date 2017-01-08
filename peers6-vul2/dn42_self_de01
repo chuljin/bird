@@ -1,5 +1,5 @@
 protocol bgp bio_dn42_self_de01 from bio_dn42 {
   neighbor fd98:abd0:29cc:f420::fff5 as 4242422481;
-  import where dn42_import_filter(6,24,33,0,0);
-  export where dn42_export_filter(6,24,33);
+  import where dn42_import_filter(5,24,33,0,0);
+  export where dn42_export_filter(5,24,33);
 };
