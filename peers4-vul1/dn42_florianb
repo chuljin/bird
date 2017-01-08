@@ -1,5 +1,5 @@
 protocol bgp be_dn42_florianb from be_dn42 {
-  neighbor 172.21.104.134 as 64647;
+  neighbor 172.21.105.134 as 64647;
   import where dn42_import_filter(2,24,33,1,1);
   export where dn42_export_filter(2,24,33);
 };
