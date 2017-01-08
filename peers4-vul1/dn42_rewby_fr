@@ -1,5 +1,5 @@
 protocol bgp be_dn42_rewby_fr from be_dn42 {
   neighbor 172.23.169.33 as 4242421230;
-  import where dn42_import_filter(2,24,33,1,10);
-  export where dn42_export_filter(2,24,33);
+  import where dn42_import_filter(3,24,33,1,10);
+  export where dn42_export_filter(3,24,33);
 };
