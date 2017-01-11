@@ -1,5 +1,5 @@
 protocol bgp be_dn42_self_ca01 from be_dn42 {
-  neighbor fd98:abd0:29cc:f420::fff2 as 4242422481;
+  neighbor fd98:abd0:29cc:f420::fff9 as 4242422481;
   import where dn42_import_filter(5,23,33,0,0);
   export where dn42_export_filter(5,23,33);
 };
