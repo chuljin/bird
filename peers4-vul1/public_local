@@ -21,6 +21,7 @@ protocol bgp be_public_vultr from be_public {
     
     if public_is_self_net_agg() then {
       public_prepend();
+      bgp_path.prepend(202540);
       accept;
     }
     reject;
