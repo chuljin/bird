@@ -7,6 +7,9 @@ protocol bgp be_public_devcapsule from be_public {
     if bgp_path.last ~ [9178, 48646] then {
       accept;
     }
+    if bgp_path.len <= 2 then {
+      accept;
+    }
     reject;
   };
   export filter {
