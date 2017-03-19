@@ -4,6 +4,12 @@ protocol bgp be_public_hostigation from be_public {
   import filter {
     bgp_ext_community.add((ro,202540,1000));
     bgp_ext_community.add((ro,202540,1006));
+    if is_rfc1918() then {
+      reject;
+    }
+    if bgp_path.len <= 4 then {
+      accept;
+    }
     reject;
   };
   export filter {

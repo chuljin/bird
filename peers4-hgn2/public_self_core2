@@ -8,6 +8,12 @@ protocol bgp bio_public_self_core2 from bio_public {
     reject;
   };
   export filter {
+    if is_rfc1918() then {
+      reject;
+    }
+    if bgp_path.len <= 3 then {
+      accept;
+    }
     if public_is_self_net() then {
       accept;
     }
