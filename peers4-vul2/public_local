@@ -5,7 +5,7 @@ protocol bgp be_public_vultr from be_public {
   import filter {
     bgp_ext_community.add((ro,202540,1000));
     bgp_ext_community.add((ro,202540,1002));
-    if public_is_interesting(4) then {
+    if public_is_interesting(0) then {
       accept;
     }
     reject;
