@@ -6,5 +6,4 @@ protocol bgp bio_public_self_us01 from bio_public {
     accept;
   };
   export all;
-  next hop self;
 };
