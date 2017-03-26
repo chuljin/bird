@@ -10,6 +10,7 @@ LOCATIONS
 08	Dallas, TX, US
 09	Manchester, D3, UK
 10	Seattle, WA, US
+11	Amsterdam, NH, NL
 
 
 PUBLIC (ro:202540:)
