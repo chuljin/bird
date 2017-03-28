@@ -1,6 +1,6 @@
 protocol bgp be_public_devcapsule from be_public {
   neighbor 185.140.115.130 as 9178;
-  source address 44.16.51.250;
+  source address 44.16.51.252;
   import filter {
     bgp_ext_community.add((ro,202540,1000));
     bgp_ext_community.add((ro,202540,1004));
