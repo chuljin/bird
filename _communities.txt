@@ -11,6 +11,7 @@ LOCATIONS
 09	Manchester, D3, UK
 10	Seattle, WA, US
 11	Amsterdam, NH, NL
+12	Miami, FL, US
 
 
 PUBLIC (ro:202540:)
