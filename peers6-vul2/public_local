@@ -6,10 +6,7 @@ protocol bgp be_public_vultr from be_public {
   import filter {
     bgp_ext_community.add((ro,202540,1000));
     bgp_ext_community.add((ro,202540,1002));
-    if is_default() then reject;
-    if public_is_self_net() then reject;
-    if public_is_choopa() then reject;
-    accept;
+    reject;
   };
   export filter {
     bgp_ext_community.add((ro,202540,4000));
