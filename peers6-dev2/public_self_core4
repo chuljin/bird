@@ -1,6 +1,6 @@
-protocol bgp bio_public_self_us01 from bio_public {
+protocol bgp bio_public_self_core4 from bio_public {
   neighbor 2A06:E881:140F::84 as 202540;
-  source address 2A06:E881:140F::35;
+  source address 2A06:E881:140F::36;
   import filter {
     if !public_is_self_net() then reject;
     accept;
