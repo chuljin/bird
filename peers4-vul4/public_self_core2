@@ -1,5 +1,5 @@
 protocol bgp bio_public_self_core2 from bio_public {
-  neighbor 44.16.51.244 as 202540;
+  neighbor 44.16.51.243 as 202540;
   source address 44.16.51.255;
   import filter {
     if public_is_self_net() then {
