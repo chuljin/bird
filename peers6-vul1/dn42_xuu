@@ -1,0 +1,5 @@
+protocol bgp be_dn42_florianb from be_dn42 {
+  neighbor fe80::2 % 'dn42_xuu' as 64737;
+  import where dn42_import_filter(3,24,33,1,14);
+  export where dn42_export_filter(3,24,33);
+};
