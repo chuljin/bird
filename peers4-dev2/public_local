@@ -2,6 +2,7 @@ protocol bgp be_public_devcapsule from be_public {
   neighbor 169.254.254.254 as 9178;
   source address 185.116.236.38;
   multihop 5;
+  next hop self;
   import filter {
     bgp_ext_community.add((ro,202540,1000));
     bgp_ext_community.add((ro,202540,1004));
