@@ -1,0 +1,23 @@
+protocol bgp be_public_4ixp_rs1 from be_public {
+  neighbor 2001:7f8:d0:b901::7d01 as 35708;
+  source address 2001:7f8:d0:b901::7d0d;
+  multihop 10;
+  next hop self;
+  import filter {
+    #bgp_ext_community.add((ro,202540,1000));
+    #bgp_ext_community.add((ro,202540,1002));
+    if is_default() then reject;
+    if public_is_self_net() then reject;
+    if public_is_choopa() then reject;
+    accept;
+  };
+  export filter {
+    #bgp_ext_community.add((ro,202540,4000));
+    #bgp_ext_community.add((ro,202540,4003));
+    if public_is_self_net_agg() then {
+      public_prepend();
+      accept;
+    }
+    reject;
+  };
+};
