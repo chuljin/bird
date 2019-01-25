@@ -20,12 +20,15 @@ PUBLIC (ro:202540:)
 01	6939	Hurricane Electric
 02	20473	Choopa (Vultr)
 03	200753	SnapServ
-04	9178	DevCapsule/FBNW (conflated)
+04	9178	DevCapsule/FBNW (conflated) (deprecated)
 05	8100	Quadranet (deprecated)
 06	6921	Arachnitec (Hostigation)
+07	49004	SquareFlow (Aulerion)
 
 20xx: Learned from IXPs
-(none)
+00	ANY
+01	137933	EVIX
+02	35708	4b42 (4IXP)
 
 30xx: Learned from downstreams
 (none)
