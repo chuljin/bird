@@ -1,0 +1,22 @@
+protocol bgp be_public_evix_rs2 from be_public {
+  neighbor 2602:fed2:fff:ffff::2 as 137933;
+  source address 2602:fed2:fff:ffff::124;
+  next hop self;
+  import filter {
+    bgp_ext_community.add((ro,202540,2000));
+    bgp_ext_community.add((ro,202540,2001));
+    if is_default() then reject;
+    if public_is_self_net() then reject;
+    if public_is_choopa() then reject;
+    accept;
+  };
+  export filter {
+    bgp_ext_community.add((ro,202540,4000));
+    bgp_ext_community.add((ro,202540,4010));
+    if public_is_self_net_agg() then {
+      public_prepend();
+      accept;
+    }
+    reject;
+  };
+};
