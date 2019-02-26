@@ -1,5 +1,5 @@
 protocol bgp be_public_evix_rs2 from be_public {
-  neighbor 2602:fed2:fff:ffff::2 as 137933;
+  neighbor 2602:fed2:fff:ffff::253 as 209762;
   source address 2602:fed2:fff:ffff::124;
   next hop self;
   import filter {
